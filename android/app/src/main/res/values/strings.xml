@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">anowar-general-store</string>
+    <string name="title_activity_main">anowar-general-store</string>
+    <string name="package_name">com.anwar.store</string>
+    <string name="custom_url_scheme">com.anwar.store</string>
+</resources>

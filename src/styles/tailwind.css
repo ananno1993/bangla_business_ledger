@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #2D7D7D; /* trustworthy-teal */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #4A9B9B; /* supporting-teal */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Status Colors */
+    --color-success: #2E7D32; /* green-800 */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #F57C00; /* orange-600 */
+    --color-warning-foreground: #FFFFFF; /* white */
+    --color-error: #C62828; /* red-700 */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #C62828; /* red-700 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Surface Colors */
+    --color-background: #FAFAFA; /* gray-50 */
+    --color-foreground: #212121; /* gray-800 */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #212121; /* gray-800 */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #212121; /* gray-800 */
+    --color-muted: #F5F5F5; /* gray-100 */
+    --color-muted-foreground: #757575; /* gray-600 */
+    --color-accent: #4A9B9B; /* supporting-teal */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Border and Input Colors */
+    --color-border: #E0E0E0; /* gray-300 */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #2D7D7D; /* trustworthy-teal */
+    --color-outline: #E0E0E0; /* gray-300 */
+    
+    /* Text Colors */
+    --color-on-surface: #212121; /* gray-800 */
+    --color-on-surface-variant: #757575; /* gray-600 */
+    
+    /* Radius */
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .bangla-text {
+    font-family: 'Noto Sans Bengali', sans-serif;
+  }
+  
+  .data-text {
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  .touch-target-large {
+    min-height: 56px;
+    min-width: 56px;
+  }
+}
